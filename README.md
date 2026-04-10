@@ -54,10 +54,9 @@ retail-behavior-analysis/
 │   ├── segment.py          # RFM segmentation
 │   ├── anomaly.py          # Anomaly detection
 │   └── run.py              # Entry point — runs everything
-├── data/                   # Auto-populated by download_data.py (git-ignored)
+├── data/                   # Place online_retail.csv here (git-ignored)
 ├── outputs/
 │   └── charts/             # Generated charts (auto-created on first run)
-├── download_data.py        # Downloads dataset from UCI ML Repository
 ├── requirements.txt
 ├── assessment_answers.md   # Detailed methodology and analysis rationale
 ├── report.md               # Full analysis report with charts and insights
@@ -70,11 +69,9 @@ retail-behavior-analysis/
 
 ### 1 — Get the dataset
 
-```bash
-python download_data.py
-```
+Download from [Kaggle — Online Retail](https://www.kaggle.com/datasets/vijayuv/onlineretail) and place the file at `data/online_retail.csv`.
 
-Downloads directly from the UCI ML Repository and saves to `data/online_retail.csv`. The `data/` directory is git-ignored — run this once after cloning.
+The `data/` directory is git-ignored — the file is not included in the repository.
 
 ### 2 — Install dependencies
 
