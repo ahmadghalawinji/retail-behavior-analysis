@@ -1,0 +1,10 @@
+# Dataset — download with: python download_data.py
+data/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+
+# Private
+assessment_answers.md
